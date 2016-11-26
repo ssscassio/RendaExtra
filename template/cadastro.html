@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RendaExtra</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+  <script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Renda-Extra</a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li>
+                          <a href="login.html">Login</a>
+                      </li>
+                      <li>
+                          <a href="cadastro.html">Cadastro</a>
+                      </li>
+
+                  </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container -->
+      </nav>
+  <br><br>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="js/cadastro.js"></script>
+  <script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+
+<div class="container">
+    <div class="row">
+
+    <div class="row">
+
+
+
+      <div class="col-xs-12 col-md-12 panel panel-default">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="page-header">Novo cadastro
+            </h1>
+          </div>
+        </div>
+
+        <form method="post" id="formcadastro" name="formcadastro">
+          <div class="panel panel-default col-md-4">
+            <h4 class="page-header">Informações da conta</h4>
+          <div class="form-group">
+            <label>Nome Completo: <font color="FF0000">*</font> </label>
+            <input id="nomecadastro"type="text" class="form-control" name="nome" require placeholder="Nome Sobrenome">
+            <div id="nomecadastroerror"></div>
+          </div>
+          <div class="form-group">
+            <label >CPF: <font color="FF0000">*</font> </label>
+            <input id="cpfcadastro" type="number" class="form-control" name="cpf" require placeholder="99988877711">
+            <div id="cpfcadastroerror"></div>
+          </div>
+          <div class="form-group">
+            <label> Senha : <font color="FF0000">*</font> </label>
+            <input id="senhacadastro"type="password" class="form-control" name="password" require placeholder="Digite sua senha">
+            <div id="senhaforca"></div>
+            <div id="senhacadastroerror"></div>
+          </div>
+          <div class="form-group">
+            <label> Repetir Senha: <font color="FF0000">*</font> </label>
+            <input id="repetirsenhacadastro" type="password" class="form-control" name="repetirpassword" require placeholder="Repetir sua senha">
+            <div id="repetirsenhacadastroerror"></div>
+          </div>
+          <div class="form-group">
+            <label>E-mail: <font color="FF0000">*</font> </label>
+            <input id="emailcadastro" type="email" class="form-control" name="email" require placeholder="email@email.com">
+            <div id="emailcadastroerror"></div>
+          </div>
+          <div class="form-group">
+            <label>Data de Nascimento: <font color="FF0000">*</font> </label>
+            <input id="nascimentocadastro" type="date" class="form-control" name="nascimento" require placeholder="dd/mm/aaaa">
+            <div id="nascimentocadastroerror"></div>
+          </div>
+          <div class="form-group">
+          <label>Sexo: <font color="FF0000">*</font> </label><br>
+            <input type="radio" name="gender" value="male" checked> Homem<br>
+            <input type="radio" name="gender" value="female"> Mulher<br>
+          </div>
+        </div>
+
+          <div class="panel panel-default col-md-4">
+            <h4 class="page-header">Endereço</h4>
+            <div class="form-group">
+              <label>CEP: <font color="FF0000">*</font> </label>
+              <input id="cepcadastro" type="text" class="form-control" name="cep"  placeholder="Informe seu CEP" >
+              <div id="cepcadastroerror"></div>
+            </div>
+            <div class="form-group">
+              <label>Estado: <font color="FF0000">*</font> </label>
+              <input id="estadocadastro" type="text" class="form-control" name="estado" required  placeholder="Informe seu Estado" >
+              <div id="estadocadastroerror"></div>
+            </div>
+            <div class="form-group">
+              <label>Bairro: <font color="FF0000">*</font> </label>
+              <input id="bairrocadastro" type="text" class="form-control" name="bairro" required placeholder="Informe seu Bairro">
+              <div id="bairrocadastroerror"></div>
+            </div>
+            <div class="form-group">
+              <label>Cidade: <font color="FF0000">*</font> </label>
+              <input id="cidadecadastro" type="text" class="form-control" name="cidade" required placeholder="Informe sua Cidade">
+              <div id="cidadecadastroerror"></div>
+            </div>
+            <div class="form-group">
+              <label>Logradouro: <font color="FF0000">*</font> </label>
+              <input id="logradourocadastro" type="text" class="form-control" name="logradouro" required  placeholder="Informe sua Rua">
+              <div id="logradourocadastroerror"></div>
+            </div>
+            <div class="form-group">
+              <label>Numero: <font color="FF0000">*</font> </label>
+              <input id="numerocadastro" type="number" class="form-control" name="numero" required placeholder="Número de sua Casa">
+              <div id="numerocadastroerror"></div>
+            </div>
+            <div class="form-group">
+              <label>Complemento: <font color="FF0000">*</font> </label>
+              <input id="complementocadastro" type="text" class="form-control" name="complemento" placeholder=" ex.: Casa/ Apt ..." >
+              <div id="complementocadastroerror"></div>
+          </div>
+          </div>
+          <div class="col-xs-12 col-md-4 panel panel-default">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="page-header">Serviços que você deseja prestar
+                </h4>
+              </div>
+            </div>
+
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Diarista</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Construção</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Manicure</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Domésticos</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Eletricista</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Diversos</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <input id="cadastrar" type="submit" name="botaoCadastrar" class="btn btn-primary" value="Criar nova conta!">
+            </div>
+          </div>
+        </form>
+        <br>
+        <div id="cadastroerror"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+<hr>
+  <footer>
+      <div class="row">
+          <div class="col-lg-12">
+              <p>Copyright &copy; RendaExtra 2016</p>
+          </div>
+      </div>
+  </footer>
+</div>
+
+
+
+
+
+</body>
+</html>
